@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./normalize.css">
+</head>
+<body>
+  <div class="container">
+    <form action="" id="form" class="form">
+      <h2>Contact Form</h2>
+      <div class="contact-box">
+        <label for="name">Name</label>
+        <input name="name" id="name" class="name" type="text" placeholder="Write here...">
+        <span class="error-msg"></span>
+      </div>
+      <div class="contact-box">
+        <label for="email">Email</label>
+        <input name="email" id="email" class="email" type="email" placeholder="example@example.com">
+        <span class="error-msg"></span>
+      </div>
+      <div class="contact-box">
+        <label for="">Subject</label>
+        <input name="subject" id="subject" class="subject" type="text" placeholder="Write here..." autocomplete="off">
+        <span class="error-msg"></span>
+      </div>
+      <div class="contact-box">
+        <textarea name="message" id="message" class="message" cols="30" rows="10" placeholder="Write your message..."></textarea>
+        <span class="error-msg"></span>
+      </div>
+      <button class="btn-send" id="btn-send" type="submit">Send</button>
+    </form>
+  </div>
+  <script src="./scripts.js"></script>
+</body>
+</html>
